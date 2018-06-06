@@ -1,0 +1,34 @@
+<div class="container">
+    <div class="row">
+        <div class="col l12 center-align">
+            <h1>Veggie Burgers</h1>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col l4 center-align">
+            <ol>
+                {{#each burgers}}
+                    {{#if devoured}}
+                    <li>{{burger_name}}</li>
+                    <a class="waves-effect waves-light btn"><i class="material-icons left">local_dining</i>Devour</a>
+                    {{/if}}
+                {{/each}}
+            </ol>
+        </div>
+        <div class="col l4 center-align">
+          <textarea placeholder="Order a burger!"id="icon_prefix2" class="materialize-textarea"></textarea>
+          <a class="waves-effect waves-light btn"><i class="material-icons right">add</i>Order</a>
+        </div>
+        <div class="col l4 center-align">
+            <ol>
+                {{#each burgers}}
+                {{#unless devoured}}
+                <li>{{burger_name}}</li>
+                     <a class="waves-effect waves-light btn grey lighten-4 gonetxt"><i class="material-icons left">sentiment_very_dissatisfied</i>All gone!</a>
+                {{/unless}}
+                {{/each}}
+            </ol>
+        </div>
+    </div>
+</div>
+
