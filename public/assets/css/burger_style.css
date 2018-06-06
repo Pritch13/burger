@@ -1,15 +1,58 @@
 li {
     margin: 30px;
+    font-size: 25px;
 }
 
-ol {
+h1 {
+    font-family: 'Merienda One', cursive;
+    margin-top: 15%;
+    font-size: 90px;
+    border: solid;
+    color: white;
+}
 
+.orderTxt {
+    color: black;
+    background-color:  white;
+}
+
+.devourTxt {
+    background-color: #fd9819;
+}
+
+.goneTxt {
+    background-color:  #fee704;
+}
+
+.container {
+    /* margin-top: 10%; */
+    height: 100vh;
 }
 
 body {
     height: 100vh;
+    font-family: 'Karla', sans-serif;
+    font-weight: bold;
 }
 
 .gonetxt {
     color: black;
 }
+
+body{
+    background: url("../img/bg.jpg") no-repeat center center fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+    color: rgb(80, 80, 80);
+    opacity: 1; /* Firefox */
+}
+
+.btn:hover{ 
+    background-color: #fefefe;
+    color: gray;
+  }
