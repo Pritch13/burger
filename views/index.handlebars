@@ -5,21 +5,21 @@
         </div>
     </div>
     <div class="row">
-        <div class="col l4 center-align">
+        <div class="col l4 center-align chalk">
             <ol>
                 {{#each burgers}}
                     {{#if devoured}}
                     <li>{{burger_name}}</li>
-                    <a class="waves-effect waves-light btn devourTxt"><i class="material-icons left">local_dining</i>Devour</a>
+                    <a class="waves-effect waves-light btn devourTxt" data-id="{{id}}" data-newdevoured="{{devoured}}"><i class="material-icons left">local_dining</i>Devour</a>
                     {{/if}}
                 {{/each}}
             </ol>
         </div>
         <div class="col l4 center-align">
-          <textarea placeholder="Order a burger!"id="icon_prefix2" class="materialize-textarea"></textarea>
+          <textarea placeholder="Order a burger!"id="orderform" class="materialize-textarea"></textarea>
           <a class="waves-effect waves-light btn orderTxt"><i class="material-icons right">add</i>Order</a>
         </div>
-        <div class="col l4 center-align">
+        <div class="col l4 center-align chalk">
             <ol>
                 {{#each burgers}}
                 {{#unless devoured}}
